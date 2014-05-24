@@ -108,7 +108,7 @@ def send_author_stats(author_name, frequent_domains, subreddit = None, to_user =
 
 # login to Reddit
 r = praw.Reddit(user_agent=USER_AGENT)
-r.login(USERNAME, PASSWORD)
+r.login(DomainFilter, ep45onelfb)
 
 # connect to DB
 conn = sqlite3.connect(PATHTODB)
